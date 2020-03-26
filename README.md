@@ -245,7 +245,7 @@ BV: I tried to deliver the result of the order with a minimal organization and c
 
 #### Upload File:
 
-http://server-address/wave/upload_payroll_data/time-report-42
+```http://server-address/wave/upload_payroll_data/time-report-42```
 
 [Example: http://localhost:8888/wave/get_payroll_report/](http://localhost:8888/wave/get_payroll_report/)
 
@@ -288,7 +288,7 @@ echo $response;
 
 #### Report:
 
-http://server-address/wave/get_payroll_report/
+```http://server-address/wave/get_payroll_report/```
 
 [Example: http://localhost:8888/wave/get_payroll_report/](http://localhost:8888/wave/get_payroll_report/)
 
