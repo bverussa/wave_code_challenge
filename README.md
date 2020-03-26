@@ -2,6 +2,12 @@
 
 ## **Bruno Verussa**
 
+Email: b.verussa@gmail.com
+
+Phone: (778) 682-2119
+
+[LinkedIn](http://linkedin.com/in/bverussa/)
+
 ## **Requirements:**
 [se-challenge-payroll](https://github.com/wvchallenges/se-challenge-payroll)
 
