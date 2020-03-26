@@ -214,11 +214,11 @@ BV: I tested following each requirement and using [Postman](https://www.postman.
 
 - If this application was destined for a production environment, what would you add or change?
 
-BV: Add: https, authentication, move the routes to a safer location, slit the payroll class into more classes to have more control, reusability and scalability.
+BV: I would add: https, authentication, move the routes to a safer location, slit the payroll class into more classes to have more control, reusability and scalability.
 
 - What compromises did you have to make as a result of the time constraints of this challenge?
 
-BV: I tried to deliver the result of the order with a minimal organization and checks focusing on the user experience of the interface. As well as listing the points to be discussed/improved.
+BV: I think I compromised the modeling of the payroll class, because it could have been better divided, but to be quick I put everything in the same place. On the other hand, the general distribution of the application and methods is easy to modify for future versions. Also, security is always a concern, and it should be a point of review for QA / Production versions.
 
 ##### **Instructions:**
 
@@ -250,7 +250,8 @@ BV: I tried to deliver the result of the order with a minimal organization and c
 [Example: http://localhost:8888/wave/get_payroll_report/](http://localhost:8888/wave/get_payroll_report/)
 
 ##### Generated Code for HTTP:
-```POST /wave/upload_payroll_data/time-report-42 HTTP/1.1
+```
+POST /wave/upload_payroll_data/time-report-42 HTTP/1.1
 Host: localhost:8888
 Content-Type: text/csv
 Content-Type: text/plain
@@ -293,7 +294,8 @@ echo $response;
 [Example: http://localhost:8888/wave/get_payroll_report/](http://localhost:8888/wave/get_payroll_report/)
 
 ##### Generated Code for HTTP:
-```POST /wave/get_payroll_report/ HTTP/1.1
+```
+POST /wave/get_payroll_report/ HTTP/1.1
 Host: localhost:8888
 Content-Type: application/json
 ```
