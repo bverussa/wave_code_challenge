@@ -232,15 +232,24 @@ BV: I tried to deliver the result of the order with a minimal organization and c
 
 ⋅⋅* [Create Database](https://github.com/bverussa/wave_code_challenge/blob/master/wave/setup/create_database.sql)
 
-3- Copy folder wave to the DocumentRoot of your Apache server:
+3- Check/change the database config file:
+
+⋅⋅* [Database Config](https://github.com/bverussa/wave_code_challenge/blob/master/wave/config/database.class.php)
+
+4- Copy folder wave to the DocumentRoot of your Apache server:
 ⋅⋅* [App Directory](https://github.com/bverussa/wave_code_challenge)
 
-4- Endpoints:
-Upload File:
-http://server-address/wave/upload_payroll_data/time-report-42
-[Example](http://localhost:8888/wave/get_payroll_report/)
+5- Endpoints:
 
-#### Generated Code for HTTP:
+[Postman Collection](https://www.getpostman.com/collections/ff58b554bec60fb1c872)
+
+#### Upload File:
+
+http://server-address/wave/upload_payroll_data/time-report-42
+
+[Example: http://localhost:8888/wave/get_payroll_report/](http://localhost:8888/wave/get_payroll_report/)
+
+##### Generated Code for HTTP:
 ```POST /wave/upload_payroll_data/time-report-42 HTTP/1.1
 Host: localhost:8888
 Content-Type: text/csv
@@ -250,7 +259,7 @@ date,hours worked,employee id,job group
 14/11/2016,7.5,1,A
 ```
 
-#### Generated Code for PHP:
+##### Generated Code for PHP:
 ```<?php
 
 $curl = curl_init();
@@ -277,17 +286,19 @@ curl_close($curl);
 echo $response;
 ```
 
-Report:
-http://server-address/wave/get_payroll_report/
-[Example](http://localhost:8888/wave/get_payroll_report/)
+#### Report:
 
-#### Generated Code for HTTP:
+http://server-address/wave/get_payroll_report/
+
+[Example: http://localhost:8888/wave/get_payroll_report/](http://localhost:8888/wave/get_payroll_report/)
+
+##### Generated Code for HTTP:
 ```POST /wave/get_payroll_report/ HTTP/1.1
 Host: localhost:8888
 Content-Type: application/json
 ```
 
-#### Generated Code for PHP:
+##### Generated Code for PHP:
 ```<?php
 
 $curl = curl_init();
